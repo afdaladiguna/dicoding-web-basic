@@ -20,11 +20,18 @@
           <span>PEMERINTAH KOTA MAKASSAR</span>
         </a>
         <ul class="nav-list">
-          <li class="nav-items"><a class="nav-links" href="">ABOUT</a></li>
-          <li class="nav-items"><a class="nav-links" href="">ABOUT</a></li>
-          <li class="nav-items"><a class="nav-links" href="">ABOUT</a></li>
-          <li class="nav-items"><a class="nav-links" href="">CONTACT</a></li>
+          <li class="nav-items">
+            <a class="nav-links" href="#about-us">ABOUT</a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-links" href="#contact">CONTACT</a>
+          </li>
         </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
       <section class="hero">
         <h1 class="hero-title">KOTA MAKASSAR</h1>
@@ -33,12 +40,97 @@
     </header>
 
     <main>
-      <section>
-        <article></article>
-      </section>
+      <article class="about">
+        <h2 id="about-us" class="about-title">ABOUT US</h2>
+        <div class="about-div">
+          <img src="./assets/about-img.jpg" alt="" class="about-img" />
+          <div class="about-subdiv">
+            <h3>MAKASSAR</h3>
+            <p class="about-subtitle">
+              Kota Makassar adalah ibu kota provinsi Sulawesi Selatan,
+              Indonesia. Sebelumnya, kota yang sejak 1971 hingga 1999 dikenal
+              secara resmi sebagai Ujung Pandang ini merupakan kota terbesar di
+              wilayah Indonesia Timur.
+            </p>
+            <a
+              href="https://id.wikipedia.org/wiki/Kota_Makassar"
+              target="_blank"
+              class="about-btn"
+              >VIEW MORE</a
+            >
+          </div>
+        </div>
+      </article>
 
-      <aside></aside>
+      <article class="airport">
+        <div class="airport-div">
+          <div class="airport-subdiv">
+            <h3>BANDAR UDARA INTERNATIONAL SULTAN HASANUDDIN</h3>
+            <p class="airport-subtitle">
+              Bandara ini merupakan salah satu pintu gerbang utama untuk
+              penerbangan ke bagian timur Indonesia dan dinamai Sultan
+              Hasanuddin, seorang Sultan Gowa, yang berperang melawan Perusahaan
+              Hindia Timur Belanda pada tahun 1660-an.
+            </p>
+            <a
+              href="https://hasanuddin-airport.co.id/id"
+              target="_blank"
+              class="airport-btn"
+              >VIEW MORE</a
+            >
+          </div>
+          <img src="./assets/airport-img.png" alt="" class="airport-img" />
+        </div>
+      </article>
+
+      <div id="contact" class="contact-container">
+        <section class="form-section">
+          <h2>GET IN TOUCH</h2>
+          <form action="">
+            <div>
+              <input type="text" id="name" name="name" placeholder="Name" />
+            </div>
+            <div>
+              <input type="email" id="email" name="email" placeholder="Email" />
+            </div>
+            <div>
+              <input type="tel" id="phone" name="phone" placeholder="Phone" />
+            </div>
+            <div>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Message"
+                rows="5"
+              ></textarea>
+            </div>
+            <div>
+              <button type="submit" class="submit-btn">SUBMIT</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="info-section">
+          <img src="./assets/info-img.jpeg" alt="" />
+          <h3>Contact Information</h3>
+          <p>Name: Afdal Adiguna</p>
+          <p>Address: Makassar</p>
+          <p>Phone: +62 888 8888 8888</p>
+          <p>Email: m.afdal.adiguna@gmail.com</p>
+        </section>
+      </div>
     </main>
-    <footer></footer>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2024 Kota Makassar. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
   </body>
 </html>
